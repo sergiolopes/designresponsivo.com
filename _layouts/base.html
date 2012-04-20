@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+
+	<!-- IE -->
+	<meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>{{ page.title }} - {{ site.title }}</title>
+
+	<!-- Mobile -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Fontes -->
+	<link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:700|{{ page.googlefonts }}' rel='stylesheet' type='text/css'>
+
+	<!-- Estilos -->
+	<link rel="stylesheet" type="text/css" href="/style.css?5">
+	{% if page.css %}
+		<link rel="stylesheet" type="text/css" href="{{ page.css }}">
+	{% endif %}
+
+	<!-- Facebook -->
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:url" content="{{site.production_url}}{{ page.url }}">
+	<meta property="og:image" content="{{site.production_url}}{{ page.shareImage }}">
+	<meta property="og:type" content="{{ page.ogtype }}">
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="fb:admins" content="1550986373"/>
+    <meta property="fb:app_id" content="309652569089723">
+	<meta property="og:description" content="{{ page.description }}">
+	
+	<!-- Google+ -->
+	<meta itemprop="name" content="{{ page.title }}">
+	<meta itemprop="description" content="{{ page.description }}">
+	<meta itemprop="image" content="{{site.production_url}}{{ page.shareImage }}">
+
+	<!-- SEO -->
+	<meta name="description" content="{{ page.description }}">
+
+	<script>document.documentElement.className = 'js'</script>
+</head>
+<body>
+	<header>
+
+	</header>
+
+	{{ content }}
+
+
+	<div id="fb-root"></div>
+	<script src="/js/scripts.js?1" async></script>
+
+	{% if page.script %}
+		<script src="{{ page.script }}" async></script>
+	{% endif %}
+</body>
+</html>

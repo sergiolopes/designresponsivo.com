@@ -1,0 +1,10 @@
+permalink: /:title/
+exclude: ["README.md", "bin", ".gitignore"]
+production_url : http://designresponsivo.com
+
+markdown: kramdown
+pygments: true
+
+title: Design Responsivo
+author:
+   name: Sérgio Lopes
